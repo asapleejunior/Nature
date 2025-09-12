@@ -1,0 +1,35 @@
+@import "variable";
+@import "font";
+
+
+header{
+    background-color: $primary-color;
+    height: 69px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    row-gap: 50px;
+    .logo{
+        height: 40px;
+        width: 47px;
+        margin-left: 72px;
+    }
+    .navbar{
+        width: 450px;
+        margin-left: 675px;
+        ul{
+            @extend header;
+            justify-content:space-between;
+            li{
+                a{
+                    color: $text-color;
+                    font-size: 25px;
+                    font-family: pop-bold;
+                    text-decoration: none;
+                }
+                
+            }
+        }
+    }
+
+}

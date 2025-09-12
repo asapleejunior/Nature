@@ -1,0 +1,39 @@
+@import "variable";
+@import "font";
+@import "mixin";
+main{
+    .partie3{
+        margin-top: 220px;
+        .gauche{
+            height: 182px;
+            width: 512px;
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+            margin-left: 50px;
+            margin-top: 100px;
+            // border: 15px black double;
+            .absence{
+                font-size:  24px;
+                font-family: Arial;
+                font-weight: bold;
+                color: $title-color;
+                margin-top: -25px;
+
+            }
+            .agriculteurs{
+                font-size: 16px;
+                color: $title-color;
+                font-family: arial;
+
+            }
+        }
+        img{
+            width: 657px;
+            height: 334px;
+            margin-left: 671px;
+            margin-top: -400px;
+        }
+
+    }
+}

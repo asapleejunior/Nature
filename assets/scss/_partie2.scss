@@ -1,0 +1,58 @@
+@import "variable";
+@import "font";
+@import "mixin";
+main{
+    .partie2{
+        @include mixin-row;
+        margin-top: 67px;
+        .card1{
+            @include mixin-column;
+            .BIODIVERSITE{
+                font-family: Arial;
+                // text-decoration: solid;
+                color: $title-color;
+                font-size: 18px;
+                font-weight: bold;
+
+            }
+            img{
+                height: 177px;
+                width: 368px;
+
+            }
+            .texte1{
+                font-family: Arial;
+                color: $title-color;
+                font-size: 14px;
+            }
+        }
+        .card2{
+            @extend .card1;
+            .VALEUR{
+                @extend .BIODIVERSITE;
+
+            }
+            img{
+                @extend img;
+                margin-top: 18px;
+            }
+            .texte2{
+                @extend .texte1;
+                
+            }
+        }
+        .card3{
+            @extend .card1;
+            .BIEN{
+                @extend .BIODIVERSITE;
+            }
+            img{
+                @extend img;
+            }
+            .texte3{
+                @extend.texte1;
+            }
+        }
+
+    }
+}
